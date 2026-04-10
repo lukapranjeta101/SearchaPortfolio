@@ -199,9 +199,7 @@ export default function Home() {
       <section className="hero-shell">
         <div className="mx-auto flex w-full max-w-300 flex-1 flex-col px-6">
           <header className="top-nav flex w-full items-center justify-between">
-            <div className="brand">
-              <Image src={logoImage} alt="logo" className="brand-logo" priority />
-            </div>
+            <div className="brand brand-empty" aria-hidden="true" />
             <nav className="nav-links">
               <a href="#">HOME</a>
               <a href="#services">SERVICES</a>
