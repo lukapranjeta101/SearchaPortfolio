@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import logoImage from "./logo.png";
 import cabinetLogo from "../cabinetvenuelogo.png";
 import dynamixLogo from "../dynamix logo.png";
@@ -204,7 +205,7 @@ export default function Home() {
             <nav className="nav-links">
               <a href="#">HOME</a>
               <a href="#services">SERVICES</a>
-              <a href="#">PROJECTS</a>
+              <Link href="/projects">PROJECTS</Link>
               <a href="#">CONTACT</a>
             </nav>
             <button
@@ -232,7 +233,7 @@ export default function Home() {
             <nav className="mobile-menu-links" aria-label="Mobile navigation">
               <a href="#" onClick={() => setIsMobileMenuOpen(false)}>HOME</a>
               <a href="#services" onClick={() => setIsMobileMenuOpen(false)}>SERVICES</a>
-              <a href="#" onClick={() => setIsMobileMenuOpen(false)}>PROJECTS</a>
+              <Link href="/projects" onClick={() => setIsMobileMenuOpen(false)}>PROJECTS</Link>
               <a href="#" onClick={() => setIsMobileMenuOpen(false)}>CONTACT</a>
             </nav>
           </div>
@@ -327,7 +328,7 @@ export default function Home() {
               Recent Projects
             </span>
           </div>
-          <a href="#" className="projects-link">
+          <Link href="/projects" className="projects-link">
             <span className="projects-text">Explore Work</span>
             <svg
               className="explore-corner-icon"
@@ -342,7 +343,7 @@ export default function Home() {
               <path d="M8 16L16 8" />
               <path d="M10 8h6v6" />
             </svg>
-          </a>
+          </Link>
         </div>
         <div className="projects-preview">
           <div className="projects-preview-frame">
@@ -466,7 +467,7 @@ export default function Home() {
               We turn ideas into memorable brand journeys with intuitive and
               engaging digital experiences.
             </p>
-            <a href="#" className="projects-journey-link">
+            <Link href="/projects" className="projects-journey-link">
               <span className="projects-text">All Projects</span>
               <svg
                 className="explore-corner-icon"
@@ -481,7 +482,7 @@ export default function Home() {
                 <path d="M8 16L16 8" />
                 <path d="M10 8h6v6" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="projects-showcase-grid" aria-label="Projects showcase cards">
@@ -496,8 +497,8 @@ export default function Home() {
                   alt={project.title}
                   className="project-showcase-image"
                 />
-                <button
-                  type="button"
+                <Link
+                  href="/projects"
                   className="project-showcase-arrow"
                   aria-label={`Open ${project.title}`}
                 >
@@ -505,7 +506,7 @@ export default function Home() {
                     <path d="M8 16L16 8" />
                     <path d="M10 8h6v6" />
                   </svg>
-                </button>
+                </Link>
               </div>
               <ul className="project-showcase-tags" aria-label={`${project.title} tags`}>
                 {project.tags.map((tag) => (
@@ -711,7 +712,7 @@ export default function Home() {
             <nav className="site-footer-nav" aria-label="Footer navigation">
               <a href="#">HOME</a>
               <a href="#services">SERVICES</a>
-              <a href="#">PROJECTS</a>
+              <Link href="/projects">PROJECTS</Link>
               <a href="#">CONTACT</a>
             </nav>
 
