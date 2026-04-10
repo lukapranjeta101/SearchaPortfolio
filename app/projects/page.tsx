@@ -6,7 +6,7 @@ import Link from "next/link";
 import logoImage from "../logo.png";
 import cabinetVenueImage from "../../cabinetvenue.png";
 import dynamixImage from "../../dynamix.png";
-import webImage from "../../web.jpg";
+import mikeCompImage from "../../mikecomp.png";
 import myWorkImage from "../../mywork.png";
 
 const websiteProjects = [
@@ -25,14 +25,14 @@ const websiteProjects = [
       "A sharper business website focused on clean structure, stronger service communication, and a more credible digital presence across desktop and mobile.",
     image: dynamixImage,
     tags: ["Development", "Responsive UI", "Service Pages"],
-    href: "#",
-    linkLabel: "",
+    href: "https://dynamix-llc.vercel.app/",
+    linkLabel: "https://dynamix-llc.vercel.app/",
   },
   {
     title: "Mike's Handyman",
     description:
       "A conversion-first local service site designed to make contact simple, highlight key offerings fast, and remove friction for homeowners ready to book.",
-    image: webImage,
+    image: mikeCompImage,
     tags: ["Local Business", "Mobile UX", "Conversion Flow"],
     href: "https://mikeshandymanhvac.com/",
     linkLabel: "https://mikeshandymanhvac.com/",
@@ -43,8 +43,8 @@ const websiteProjects = [
       "A modern agency-style build with reusable content blocks, clearer hierarchy, and a more editorial visual rhythm that makes the brand feel established.",
     image: myWorkImage,
     tags: ["Creative Direction", "Visual System", "Growth Website"],
-    href: "#",
-    linkLabel: "",
+    href: "https://modern-weld.vercel.app/",
+    linkLabel: "https://modern-weld.vercel.app/",
   },
 ];
 
