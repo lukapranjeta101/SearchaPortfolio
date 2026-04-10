@@ -9,7 +9,6 @@ import dynamixLogo from "../dynamix logo.png";
 import handymanLogo from "../mikeshandymanlogo.png";
 import cabinetVenueImage from "../cabinetvenue.png";
 import dynamixImage from "../dynamix.png";
-import lukaImage from "../luka.png";
 import myWorkImage from "../mywork.png";
 import uiImage from "../ui.png";
 import seoImage from "../seo.jpg";
@@ -199,7 +198,9 @@ export default function Home() {
       <section className="hero-shell">
         <div className="mx-auto flex w-full max-w-300 flex-1 flex-col px-6">
           <header className="top-nav flex w-full items-center justify-between">
-            <div className="brand brand-empty" aria-hidden="true" />
+            <div className="brand">
+              <Image src={logoImage} alt="logo" className="brand-logo" priority />
+            </div>
             <nav className="nav-links">
               <a href="#">HOME</a>
               <a href="#services">SERVICES</a>
@@ -258,10 +259,6 @@ export default function Home() {
                   <p>YEARS EXPERIENCE</p>
                 </div>
               </aside>
-
-              <div className="hero-visual" aria-hidden="true">
-                <Image src={lukaImage} alt="Luka Pranjeta" priority />
-              </div>
 
               <div className="intro-copy">
                 <p>

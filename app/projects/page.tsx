@@ -64,7 +64,9 @@ export default function ProjectsPage() {
       <section className="hero-shell projects-archive-hero">
         <div className="mx-auto flex w-full max-w-300 flex-1 flex-col px-6">
           <header className="top-nav flex w-full items-center justify-between">
-            <div className="brand brand-empty" aria-hidden="true" />
+            <Link href="/" className="brand" aria-label="Home">
+              <Image src={logoImage} alt="logo" className="brand-logo" priority />
+            </Link>
             <nav className="nav-links">
               <Link href="/" className="nav-link-passive">HOME</Link>
               <Link href="/#services">SERVICES</Link>
